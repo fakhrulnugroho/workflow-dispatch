@@ -40,6 +40,6 @@ jobs:
           cache: "yarn"
           cache-dependency-path: ./yarn.lock
       - run: pwd
-      - run: ${{ inputs.stage }}
+      - run: echo "${{ inputs.stage }}"
       - run: yarn install
       - run: yarn build
